@@ -1,0 +1,46 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="game.css">
+    <link rel="stylesheet" href="all.min.css">
+    <title>memory game</title>
+</head>
+<body>
+    <div class="container">
+        <div class="startgame">
+            <input type="text" id="yourName">
+            <div class="counter">
+                <div class="white">5 * 6</div>
+                <div class="white">5 * 4</div>
+            </div>
+            <div class="choice">
+              <div class="white">numbers</div>
+              <div class="white">icons</div>
+            </div>
+            <button>play</button>
+        </div>
+    </div>
+    <div class="containerTow hide">
+        <div class="restart">
+            <div class="message">sorry! <br>you lost</div>
+            <div class="button">replay</div>
+        </div>
+    </div>
+    
+    <div class="information">
+        <div class="hello">hello :<span></span></div>
+        <div class="tries">tries :<span></span></div>
+    </div>
+    <div class="numbers"></div>
+    <audio class="finish" src="mixkit-horror-lose-2028.wav" preload="auto"></audio>
+    <audio class="mistake" src="mixkit-losing-bleeps-2026.wav" preload="auto"></audio>
+    <audio class="correct" src="mixkit-positive-notification-951.wav" preload="auto"></audio>
+    <audio class="fanfare" src="mixkit-medieval-show-fanfare-announcement-226.wav" preload="auto"></audio>
+  
+    
+</body>
+<script src="game.js"></script>
+</html>
